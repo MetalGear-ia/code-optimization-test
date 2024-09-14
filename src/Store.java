@@ -1,14 +1,12 @@
 public class Store {
     public static void main(String[] args) {
-        int p1 = 15;
-        int p2 = 10;
-        int p3 = 5;
+        final int PRODUCT1 = 15;
+        final int PRODUCT2 = 10;
+        final int PRODUCT3 = 5;
+         
+        int precios[]={PRODUCT1 * 2, PRODUCT2 * 3, PRODUCT3 * 4 };//Ingresa en arrays los precios de cada producto.
 
-        int total1 = p1 * 2;
-        int total2 = p2 * 3;
-        int total3 = p3 * 4;
-
-        int totalSales = total1 + total2 + total3;
+        int totalSales = precios[0] + precios[1] + precios[2];
 
         if (totalSales > 50) {
             System.out.println("Good sales performance");
